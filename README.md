@@ -218,8 +218,7 @@ train_losses, val_losses = train_model(model, train_loader, test_loader, loss_fn
 evaluate_model(model, test_loader, X_test, y_test)
 
 # Plot loss
-print('Name: Tella thrishendra')
-print('Register Number: 212223230227')
+
 history_df = pd.DataFrame({"loss": train_losses, "val_loss": val_losses})
 history_df.plot(title="Loss Over Epochs")
 plt.xlabel("Epoch")
@@ -253,11 +252,13 @@ for w_id, true_tag, pred_tag in zip(X_test[i], y_test[i], preds):
 ### OUTPUT:
 
 ## Loss Vs Epoch Plot:
-<img width="673" height="553" alt="image" src="https://github.com/user-attachments/assets/b189157d-fbdc-4c00-8659-d298a7240fff" />
+<img width="674" height="510" alt="image" src="https://github.com/user-attachments/assets/4f8436b3-9eaf-4b03-9143-162f1916b974" />
+
 
 
 ### Sample Text Prediction:
-<img width="429" height="478" alt="image" src="https://github.com/user-attachments/assets/05dc845a-43e3-4f07-b536-f8c1c01785df" />
+<img width="364" height="456" alt="image" src="https://github.com/user-attachments/assets/7d26ab6c-fd4b-473f-9139-0b15a21663b8" />
+
 
 
 ## RESULT:
